@@ -19,7 +19,6 @@ jobs:
           port: 2222 
           script: |
             cd /var/www/html/production/Live/betflux/
-            GIT_SSH_COMMAND='ssh -i ~/.ssh/id_rsa_leon -o IdentitiesOnly=yes' \
             git pull origin main
             npm i
             npm run build
