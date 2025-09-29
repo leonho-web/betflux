@@ -15,10 +15,10 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-	metadataBase: new URL("https://memewin.bet"),
-	title: "Meme Win - Your Gateway to Fun and Rewards",
+	metadataBase: new URL("https://betflux.games"),
+	title: "BetFlux - Your Gateway to Fun and Rewards",
 	description:
-		"Join Meme Win for an exciting gaming experience with amazing rewards!",
+		"Join BetFlux for an exciting gaming experience with amazing rewards!",
 	keywords: [
 		"gaming",
 		"rewards",
@@ -33,30 +33,30 @@ export const metadata: Metadata = {
 	],
 	authors: [
 		{
-			name: "Meme Win",
-			url: "https://memewin.bet",
+			name: "BetFlux",
+			url: "https://betflux.games",
 		},
 	],
 	openGraph: {
-		title: "Meme Win - Your Gateway to Fun and Rewards",
+		title: "BetFlux - Your Gateway to Fun and Rewards",
 		description:
-			"Join Meme Win for an exciting gaming experience with amazing rewards!",
-		url: "https://memewin.bet",
-		siteName: "Meme Win",
+			"Join BetFlux for an exciting gaming experience with amazing rewards!",
+		url: "https://betflux.games",
+		siteName: "BetFlux",
 		images: [
 			{
 				url: "/assets/site/betflux-logo.png",
 				width: 1200,
 				height: 630,
-				alt: "Meme Win - Your Gateway to Fun and Rewards",
+				alt: "BetFlux - Your Gateway to Fun and Rewards",
 			},
 		],
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Meme Win - Your Gateway to Fun and Rewards",
+		title: "BetFlux - Your Gateway to Fun and Rewards",
 		description:
-			"Join Meme Win for an exciting gaming experience with amazing rewards!",
+			"Join BetFlux for an exciting gaming experience with amazing rewards!",
 	},
 	icons: {
 		icon: "/assets/site/betflux-logo.png",

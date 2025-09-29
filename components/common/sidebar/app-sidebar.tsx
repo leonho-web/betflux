@@ -113,10 +113,10 @@ const AppSidebarComponent = ({ ...props }: ComponentProps<typeof Sidebar>) => {
 			{/* Sidebar Header with logo and title */}
 
 			<div className="flex items-center p-4">
-				<Link href="/" aria-label="Meme Win Home" className="m-auto">
+				<Link href="/" aria-label="BetFlux Home" className="m-auto">
 					<img
 						src="/assets/site/betflux-logo.png"
-						alt="Meme Win Logo"
+						alt="BetFlux Logo"
 						className="h-12"
 					/>
 				</Link>
@@ -136,7 +136,7 @@ const AppSidebarComponent = ({ ...props }: ComponentProps<typeof Sidebar>) => {
 						asChild
 					>
 						<a
-							href="https://t.me/memewin_bot/memewin"
+							href="https://t.me/betflux_bot/betflux"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
@@ -165,7 +165,7 @@ const AppSidebarComponent = ({ ...props }: ComponentProps<typeof Sidebar>) => {
 				{/* Daily Bonus Button with pulsing animation */}
 				<div className="px-2 py-3">
 					<Button
-						className="w-full bg-primary hover:bg-primary/90 text-foreground/80 font-bold shadow-lg shadow-primary/40 animate-daily-bonus-pulse transition-all duration-300"
+						className="w-full bg-primary hover:bg-primary/90 text-foreground/80 font-semibold shadow-lg shadow-primary/40 animate-daily-bonus-pulse transition-all duration-300"
 						asChild
 					>
 						<Link href="/bonus/daily">

@@ -19,6 +19,7 @@ import {
 	isRtlLocale,
 	locales,
 } from "./i18n";
+import Image from "next/image";
 
 type LocaleContextType = {
 	locale: Locale;
@@ -36,7 +37,7 @@ export function LocaleProvider({ children }: { children: React.ReactNode }) {
 	useEffect(() => {
 		const saved =
 			typeof window !== "undefined"
-				? localStorage.getItem("meme-win-locale")
+				? localStorage.getItem("bet-flux-locale")
 				: null;
 		if (saved && locales.includes(saved as Locale)) {
 			setLocaleState(saved as Locale);
@@ -67,7 +68,7 @@ export function LocaleProvider({ children }: { children: React.ReactNode }) {
 	const setLocale = (l: Locale) => {
 		setLocaleState(l);
 		if (typeof window !== "undefined")
-			localStorage.setItem("meme-win-locale", l);
+			localStorage.setItem("bet-flux-locale", l);
 	};
 
 	const ctx: LocaleContextType = useMemo(
@@ -80,9 +81,12 @@ export function LocaleProvider({ children }: { children: React.ReactNode }) {
 			<div className="min-h-screen bg-background flex flex-col items-center justify-center">
 				{/* App Logo */}
 				<div className="mb-6 animate-pulse">
-					<img
+					<Image
+						priority
+						width={800}
+						height={800}
 						src="/assets/site/betflux-logo.png"
-						alt="Meme Win Logo"
+						alt="BetFlux Logo"
 						className="w-[80%] mx-auto"
 					/>
 				</div>

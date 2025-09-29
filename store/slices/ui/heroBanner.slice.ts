@@ -5,7 +5,14 @@ import { heroBannerPropsFactory } from "@/components/features/banners/hero/hero-
 import { Game } from "@/types/games/gameList.types";
 
 const LAYOUT_STORAGE_KEY = "hero-banner-layout";
-type SupportedLayouts = "layout1" | "layout2" | "layout3" | "layout4";
+type SupportedLayouts =
+	| "layout1"
+	| "layout2"
+	| "layout3"
+	| "layout4"
+	| "layout6"
+	| "layout7"
+	| "layout8";
 
 /**
  * Defines the state structure for UI-related HeroBanner configurations.
@@ -64,7 +71,7 @@ export const createHeroBannerSlice: AppStateCreator<
 			const savedLayout = localStorage.getItem(
 				LAYOUT_STORAGE_KEY
 			) as SupportedLayouts | null;
-			const layoutToLoad: SupportedLayouts = "layout2";
+			const layoutToLoad: SupportedLayouts = "layout8";
 
 			const propsBuilder = heroBannerPropsFactory[layoutToLoad];
 			if (propsBuilder) {

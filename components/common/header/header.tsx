@@ -37,6 +37,7 @@ import {
 	faMagnifyingGlass,
 	faRightFromBracket,
 	faSquareList,
+	faUser,
 	faUsers,
 	faWallet,
 } from "@fortawesome/pro-light-svg-icons";
@@ -109,12 +110,16 @@ export function PageHeader({ className }: { className?: string }) {
 				</DropdownMenuLabel>
 				<DropdownMenuSeparator />
 				<DropdownMenuGroup>
+					<DropdownMenuItem onClick={() => router.push("/profile")}>
+						<FontAwesomeIcon icon={faUser} fontSize={20} />
+						<span>{tHeader("profile")}</span>
+					</DropdownMenuItem>
 					<DropdownMenuItem onClick={handleCashirClick}>
 						<FontAwesomeIcon icon={faWallet} fontSize={20} />
 						<span>{tHeader("cashier")}</span>
 					</DropdownMenuItem>
 					<DropdownMenuItem
-						onClick={() => router.push("/profile?section=bet")}
+						onClick={() => router.push("/history?section=bet")}
 					>
 						<FontAwesomeIcon icon={faChartLineUp} fontSize={20} />
 						<span>{tHeader("winLoss")}</span>

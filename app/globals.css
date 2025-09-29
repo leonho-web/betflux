@@ -131,11 +131,11 @@
   --sidebar-ring: oklch(0.705 0.015 286.067); */
 
 	/* Base Colors */
-	--background: oklch(0.98 0.005 60); /* Soft warm white */
+	--background: oklch(0.985 0.004 80); /* Soft warm-neutral for eye comfort */
 	--foreground: oklch(0.15 0.02 240); /* Deep navy blue (#141428) */
 
 	/* Card Colors */
-	--card: oklch(0.96 0.01 50); /* Slightly warm card background */
+	--card: oklch(17.698% 0.02916 246.71); /* Unified calm card */
 	--card-foreground: oklch(0.141 0.005 285.823);
 
 	/* Popover Colors */
@@ -175,7 +175,7 @@
 	--chart-5: oklch(0.75 0.08 120); /* Gold accent */
 
 	/* Sidebar Colors */
-	--sidebar: oklch(0.96 0.01 50); /* Light warm sidebar */
+	--sidebar: oklch(17.698% 0.02916 246.71); /* Unified calm sidebar */
 	--sidebar-foreground: oklch(0.15 0.02 240); /* Deep navy text */
 	--sidebar-primary: oklch(0.68 0.15 50); /* Orange primary */
 	--sidebar-primary-foreground: oklch(0.98 0.005 60); /* Light text */
@@ -220,7 +220,9 @@
   --sidebar-ring: oklch(0.552 0.016 285.938); */
 
 	/* Base Colors */
-	--background: oklch(0.12 0.02 240); /* Deep navy background (#141428) */
+	--background: oklch(
+		0.15 0.02 240
+	); /* Neutral-cool deep for reduced eye strain */
 	--foreground: oklch(0.95 0.01 50); /* Warm white text */
 
 	/* Card Colors */
@@ -276,19 +278,19 @@
 
 /* Red Theme */
 .theme-red {
-	--background: oklch(7.61% 0.04243 292.484);
+	--background: oklch(0.985 0.006 30); /* Warm ivory with subtle red bias */
 	--foreground: oklch(0.141 0.005 285.823);
-	--card: oklch(0.0761 0.0424 292.48);
+	--card: oklch(1 0 0);
 	--card-foreground: oklch(0.141 0.005 285.823);
-	--popover: oklch(0.0761 0.0424 292.48);
+	--popover: oklch(1 0 0);
 	--popover-foreground: oklch(0.141 0.005 285.823);
-	--primary: oklch(63.78% 0.23729 25.422);
+	--primary: oklch(0.637 0.237 25.331);
 	--primary-foreground: oklch(0.971 0.013 17.38);
 	--secondary: oklch(0.967 0.001 286.375);
 	--secondary-foreground: oklch(0.21 0.006 285.885);
 	--muted: oklch(0.967 0.001 286.375);
 	--muted-foreground: oklch(0.552 0.016 285.938);
-	--accent: oklch(0.967 0.001 286.375);
+	--accent: oklch(0.96 0.05 25);
 	--accent-foreground: oklch(0.21 0.006 285.885);
 	--destructive: oklch(0.577 0.245 27.325);
 	--border: oklch(0.92 0.004 286.32);
@@ -310,7 +312,7 @@
 }
 
 .theme-red.dark {
-	--background: oklch(7.61% 0.04243 292.484);
+	--background: oklch(0.15 0.02 240); /* Neutral dark for comfort */
 	--foreground: oklch(0.985 0 0);
 	--card: oklch(0.21 0.006 285.885);
 	--card-foreground: oklch(0.985 0 0);
@@ -322,7 +324,7 @@
 	--secondary-foreground: oklch(0.985 0 0);
 	--muted: oklch(0.274 0.006 286.033);
 	--muted-foreground: oklch(0.705 0.015 286.067);
-	--accent: oklch(0.274 0.006 286.033);
+	--accent: oklch(0.3 0.06 25);
 	--accent-foreground: oklch(0.985 0 0);
 	--destructive: oklch(0.704 0.191 22.216);
 	--border: oklch(1 0 0 / 10%);
@@ -333,11 +335,12 @@
 	--chart-3: oklch(0.769 0.188 70.08);
 	--chart-4: oklch(0.627 0.265 303.9);
 	--chart-5: oklch(0.645 0.246 16.439);
-	--sidebar: oklch(16.68% 0.03023 20.774);
+	--sidebar: oklch(0.21 0.006 285.885);
 	--sidebar-foreground: oklch(0.985 0 0);
 	--sidebar-primary: oklch(0.637 0.237 25.331);
 	--sidebar-primary-foreground: oklch(0.971 0.013 17.38);
-	--sidebar-accent: oklch(37.04% 0.08128 21.784);
+	--sidebar-accent: oklch(0.274 0.006 286.033);
+
 	--sidebar-accent-foreground: oklch(0.985 0 0);
 	--sidebar-border: oklch(1 0 0 / 10%);
 	--sidebar-ring: oklch(0.637 0.237 25.331);
@@ -345,7 +348,7 @@
 
 /* Rose Theme */
 .theme-rose {
-	--background: oklch(1 0 0);
+	--background: oklch(0.985 0.006 340); /* Gentle rose-tinted ivory */
 	--foreground: oklch(0.141 0.005 285.823);
 	--card: oklch(1 0 0);
 	--card-foreground: oklch(0.141 0.005 285.823);
@@ -357,7 +360,7 @@
 	--secondary-foreground: oklch(0.21 0.006 285.885);
 	--muted: oklch(0.967 0.001 286.375);
 	--muted-foreground: oklch(0.552 0.016 285.938);
-	--accent: oklch(0.967 0.001 286.375);
+	--accent: oklch(0.96 0.05 20);
 	--accent-foreground: oklch(0.21 0.006 285.885);
 	--destructive: oklch(0.577 0.245 27.325);
 	--border: oklch(0.92 0.004 286.32);
@@ -379,7 +382,7 @@
 }
 
 .theme-rose.dark {
-	--background: oklch(0.141 0.005 285.823);
+	--background: oklch(0.15 0.02 240);
 	--foreground: oklch(0.985 0 0);
 	--card: oklch(0.21 0.006 285.885);
 	--card-foreground: oklch(0.985 0 0);
@@ -391,7 +394,7 @@
 	--secondary-foreground: oklch(0.985 0 0);
 	--muted: oklch(0.274 0.006 286.033);
 	--muted-foreground: oklch(0.705 0.015 286.067);
-	--accent: oklch(0.274 0.006 286.033);
+	--accent: oklch(0.3 0.06 20);
 	--accent-foreground: oklch(0.985 0 0);
 	--destructive: oklch(0.704 0.191 22.216);
 	--border: oklch(1 0 0 / 10%);
@@ -414,7 +417,7 @@
 
 /* Orange Theme */
 .theme-orange {
-	--background: oklch(1 0 0);
+	--background: oklch(0.985 0.006 70); /* Warm ivory */
 	--foreground: oklch(0.141 0.005 285.823);
 	--card: oklch(1 0 0);
 	--card-foreground: oklch(0.141 0.005 285.823);
@@ -426,7 +429,7 @@
 	--secondary-foreground: oklch(0.21 0.006 285.885);
 	--muted: oklch(0.967 0.001 286.375);
 	--muted-foreground: oklch(0.552 0.016 285.938);
-	--accent: oklch(0.967 0.001 286.375);
+	--accent: oklch(0.95 0.07 55);
 	--accent-foreground: oklch(0.21 0.006 285.885);
 	--destructive: oklch(0.577 0.245 27.325);
 	--border: oklch(0.92 0.004 286.32);
@@ -448,7 +451,7 @@
 }
 
 .theme-orange.dark {
-	--background: oklch(0.141 0.005 285.823);
+	--background: oklch(0.15 0.02 240);
 	--foreground: oklch(0.985 0 0);
 	--card: oklch(0.21 0.006 285.885);
 	--card-foreground: oklch(0.985 0 0);
@@ -460,7 +463,7 @@
 	--secondary-foreground: oklch(0.985 0 0);
 	--muted: oklch(0.274 0.006 286.033);
 	--muted-foreground: oklch(0.705 0.015 286.067);
-	--accent: oklch(0.274 0.006 286.033);
+	--accent: oklch(0.3 0.07 55);
 	--accent-foreground: oklch(0.985 0 0);
 	--destructive: oklch(0.704 0.191 22.216);
 	--border: oklch(1 0 0 / 10%);
@@ -483,7 +486,7 @@
 
 /* Green Theme */
 .theme-green {
-	--background: oklch(1 0 0);
+	--background: oklch(0.985 0.005 150); /* Soft moss tint */
 	--foreground: oklch(0.141 0.005 285.823);
 	--card: oklch(1 0 0);
 	--card-foreground: oklch(0.141 0.005 285.823);
@@ -495,7 +498,7 @@
 	--secondary-foreground: oklch(0.21 0.006 285.885);
 	--muted: oklch(0.967 0.001 286.375);
 	--muted-foreground: oklch(0.552 0.016 285.938);
-	--accent: oklch(0.967 0.001 286.375);
+	--accent: oklch(0.95 0.06 150);
 	--accent-foreground: oklch(0.21 0.006 285.885);
 	--destructive: oklch(0.577 0.245 27.325);
 	--border: oklch(0.92 0.004 286.32);
@@ -517,7 +520,9 @@
 }
 
 .theme-green.dark {
-	--background: oklch(0.141 0.005 285.823);
+	/* --background: oklch(0.141 0.005 285.823); */
+	/* --background: oklch(19.297% 0.02414 283.907); */
+	--background: oklch(0.15 0.022 240); /* Neutral dark for comfort */
 	--foreground: oklch(0.985 0 0);
 	--card: oklch(0.21 0.006 285.885);
 	--card-foreground: oklch(0.985 0 0);
@@ -529,7 +534,7 @@
 	--secondary-foreground: oklch(0.985 0 0);
 	--muted: oklch(0.274 0.006 286.033);
 	--muted-foreground: oklch(0.705 0.015 286.067);
-	--accent: oklch(0.274 0.006 286.033);
+	--accent: oklch(0.3 0.06 150);
 	--accent-foreground: oklch(0.985 0 0);
 	--destructive: oklch(0.704 0.191 22.216);
 	--border: oklch(1 0 0 / 10%);
@@ -540,7 +545,8 @@
 	--chart-3: oklch(0.769 0.188 70.08);
 	--chart-4: oklch(0.627 0.265 303.9);
 	--chart-5: oklch(0.645 0.246 16.439);
-	--sidebar: oklch(0.21 0.006 285.885);
+	/* --sidebar: oklch(0.21 0.006 285.885); */
+	--sidebar: oklch(17.698% 0.02916 246.71);
 	--sidebar-foreground: oklch(0.985 0 0);
 	--sidebar-primary: oklch(0.696 0.17 162.48);
 	--sidebar-primary-foreground: oklch(0.393 0.095 152.535);
@@ -552,7 +558,7 @@
 
 /* Blue Theme */
 .theme-blue {
-	--background: oklch(1 0 0);
+	--background: oklch(0.985 0.005 250); /* Cool airy white */
 	--foreground: oklch(0.141 0.005 285.823);
 	--card: oklch(1 0 0);
 	--card-foreground: oklch(0.141 0.005 285.823);
@@ -564,7 +570,7 @@
 	--secondary-foreground: oklch(0.21 0.006 285.885);
 	--muted: oklch(0.967 0.001 286.375);
 	--muted-foreground: oklch(0.552 0.016 285.938);
-	--accent: oklch(0.967 0.001 286.375);
+	--accent: oklch(0.95 0.06 255);
 	--accent-foreground: oklch(0.21 0.006 285.885);
 	--destructive: oklch(0.577 0.245 27.325);
 	--border: oklch(0.92 0.004 286.32);
@@ -586,7 +592,7 @@
 }
 
 .theme-blue.dark {
-	--background: oklch(0.141 0.005 285.823);
+	--background: oklch(0.15 0.022 250);
 	--foreground: oklch(0.985 0 0);
 	--card: oklch(0.21 0.006 285.885);
 	--card-foreground: oklch(0.985 0 0);
@@ -598,7 +604,7 @@
 	--secondary-foreground: oklch(0.985 0 0);
 	--muted: oklch(0.274 0.006 286.033);
 	--muted-foreground: oklch(0.705 0.015 286.067);
-	--accent: oklch(0.274 0.006 286.033);
+	--accent: oklch(0.3 0.06 255);
 	--accent-foreground: oklch(0.985 0 0);
 	--destructive: oklch(0.704 0.191 22.216);
 	--border: oklch(1 0 0 / 10%);
@@ -621,7 +627,7 @@
 
 /* Yellow Theme */
 .theme-yellow {
-	--background: oklch(1 0 0);
+	--background: oklch(0.985 0.006 95); /* Very low-chroma warm */
 	--foreground: oklch(0.141 0.005 285.823);
 	--card: oklch(1 0 0);
 	--card-foreground: oklch(0.141 0.005 285.823);
@@ -633,7 +639,7 @@
 	--secondary-foreground: oklch(0.21 0.006 285.885);
 	--muted: oklch(0.967 0.001 286.375);
 	--muted-foreground: oklch(0.552 0.016 285.938);
-	--accent: oklch(0.967 0.001 286.375);
+	--accent: oklch(0.96 0.07 95);
 	--accent-foreground: oklch(0.21 0.006 285.885);
 	--destructive: oklch(0.577 0.245 27.325);
 	--border: oklch(0.92 0.004 286.32);
@@ -655,7 +661,7 @@
 }
 
 .theme-yellow.dark {
-	--background: oklch(0.141 0.005 285.823);
+	--background: oklch(0.155 0.022 240);
 	--foreground: oklch(0.985 0 0);
 	--card: oklch(0.21 0.006 285.885);
 	--card-foreground: oklch(0.985 0 0);
@@ -667,7 +673,7 @@
 	--secondary-foreground: oklch(0.985 0 0);
 	--muted: oklch(0.274 0.006 286.033);
 	--muted-foreground: oklch(0.705 0.015 286.067);
-	--accent: oklch(0.274 0.006 286.033);
+	--accent: oklch(0.3 0.07 95);
 	--accent-foreground: oklch(0.985 0 0);
 	--destructive: oklch(0.704 0.191 22.216);
 	--border: oklch(1 0 0 / 10%);
@@ -690,7 +696,7 @@
 
 /* Violet Theme */
 .theme-violet {
-	--background: oklch(1 0 0);
+	--background: oklch(0.985 0.005 290); /* Slight violet bias */
 	--foreground: oklch(0.141 0.005 285.823);
 	--card: oklch(1 0 0);
 	--card-foreground: oklch(0.141 0.005 285.823);
@@ -702,7 +708,7 @@
 	--secondary-foreground: oklch(0.21 0.006 285.885);
 	--muted: oklch(0.967 0.001 286.375);
 	--muted-foreground: oklch(0.552 0.016 285.938);
-	--accent: oklch(0.967 0.001 286.375);
+	--accent: oklch(0.95 0.06 292);
 	--accent-foreground: oklch(0.21 0.006 285.885);
 	--destructive: oklch(0.577 0.245 27.325);
 	--border: oklch(0.92 0.004 286.32);
@@ -724,7 +730,7 @@
 }
 
 .theme-violet.dark {
-	--background: oklch(0.141 0.005 285.823);
+	--background: oklch(0.15 0.022 260);
 	--foreground: oklch(0.985 0 0);
 	--card: oklch(0.21 0.006 285.885);
 	--card-foreground: oklch(0.985 0 0);
@@ -736,7 +742,7 @@
 	--secondary-foreground: oklch(0.985 0 0);
 	--muted: oklch(0.274 0.006 286.033);
 	--muted-foreground: oklch(0.705 0.015 286.067);
-	--accent: oklch(0.274 0.006 286.033);
+	--accent: oklch(0.3 0.06 292);
 	--accent-foreground: oklch(0.985 0 0);
 	--destructive: oklch(0.704 0.191 22.216);
 	--border: oklch(1 0 0 / 10%);
@@ -760,7 +766,7 @@
 /* Poker Theme */
 .theme-poker {
 	/* Base Colors - Clean card white with subtle navy undertones */
-	--background: oklch(0.98 0.002 240); /* Pure card white */
+	--background: oklch(0.985 0.003 250); /* Crisp neutral with cool hint */
 	--foreground: oklch(0.18 0.02 220); /* Deep navy-black from felt */
 
 	/* Card Colors - Crisp white cards */
@@ -792,10 +798,8 @@
 	); /* Preserved zinc muted foreground */
 
 	/* Accent Colors - Preserved from your changes */
-	--accent: oklch(0.967 0.001 286.375); /* Preserved zinc accent */
-	--accent-foreground: oklch(
-		0.21 0.006 285.885
-	); /* Preserved zinc accent foreground */
+	--accent: oklch(0.93 0.07 210); /* Polished cool teal */
+	--accent-foreground: oklch(0.18 0.02 220); /* Deep navy text */
 
 	/* Destructive Colors - Bright red from cards */
 	--destructive: oklch(0.6 0.25 20); /* Vibrant red from card suits */
@@ -818,7 +822,7 @@
 	--sidebar-foreground: oklch(0.18 0.02 220); /* Deep navy text */
 	--sidebar-primary: oklch(0.55 0.22 15); /* Red primary */
 	--sidebar-primary-foreground: oklch(0.98 0.002 240); /* White text */
-	--sidebar-accent: oklch(0.45 0.12 200); /* Blue chip accent */
+	--sidebar-accent: oklch(1 0.12 200); /* Blue chip accent */
 	--sidebar-accent-foreground: oklch(0.98 0.002 240); /* White text */
 	--sidebar-border: oklch(0.88 0.01 240); /* Subtle border */
 	--sidebar-ring: oklch(0.55 0.22 15); /* Red ring */
@@ -826,7 +830,7 @@
 
 .theme-poker.dark {
 	/* Base Colors - Deep felt table background */
-	--background: oklch(0.15 0.02 220); /* Deep navy felt table */
+	--background: oklch(0.155 0.02 240); /* Gentle neutral-cool dark */
 	--foreground: oklch(0.95 0.005 240); /* Clean white text */
 
 	/* Card Colors - Elevated cards on dark felt */
@@ -853,11 +857,9 @@
 		0.705 0.015 286.067
 	); /* Preserved dark muted foreground */
 
-	/* Accent Colors - Preserved dark mode values */
-	--accent: oklch(0.274 0.006 286.033); /* Preserved dark accent */
-	--accent-foreground: oklch(
-		0.985 0 0
-	); /* Preserved dark accent foreground */
+	/* Accent Colors - Polished for dark mode */
+	--accent: oklch(0.35 0.07 210); /* Teal accent */
+	--accent-foreground: oklch(0.95 0.005 240); /* White text */
 
 	/* Destructive Colors */
 	--destructive: oklch(0.7 0.28 20); /* Bright red for dark mode */
@@ -880,7 +882,8 @@
 	--sidebar-foreground: oklch(0.95 0.005 240); /* White text */
 	--sidebar-primary: oklch(0.65 0.25 15); /* Bright red */
 	--sidebar-primary-foreground: oklch(0.95 0.005 240); /* White text */
-	--sidebar-accent: oklch(0.55 0.15 200); /* Brighter blue */
+	/* --sidebar-accent: oklch(0.55 0.15 200); Brighter blue */
+	--sidebar-accent: oklch(32.608% 0.10653 7.808); /* Brighter blue */
 	--sidebar-accent-foreground: oklch(0.95 0.005 240); /* White text */
 	--sidebar-border: oklch(0.3 0.02 220); /* Dark border */
 	--sidebar-ring: oklch(0.65 0.25 15); /* Bright red ring */
@@ -889,7 +892,9 @@
 /* Vibrant Poker Theme */
 .theme-poker-vibrant {
 	/* Base Colors - Electric white with vibrant undertones */
-	--background: oklch(0.99 0.01 300); /* Bright white with magenta hint */
+	--background: oklch(
+		0.985 0.004 300
+	); /* Calmer bright with minimal chroma */
 	--foreground: oklch(0.12 0.05 240); /* Deep electric navy */
 
 	/* Card Colors - Luminous white cards */
@@ -920,11 +925,9 @@
 		0.552 0.016 285.938
 	); /* Preserved zinc muted foreground */
 
-	/* Accent Colors - Preserved from your changes */
-	--accent: oklch(0.967 0.001 286.375); /* Preserved zinc accent */
-	--accent-foreground: oklch(
-		0.21 0.006 285.885
-	); /* Preserved zinc accent foreground */
+	/* Accent Colors - Polished teal for comfort */
+	--accent: oklch(0.93 0.07 210);
+	--accent-foreground: oklch(0.12 0.05 240);
 
 	/* Destructive Colors - Neon red */
 	--destructive: oklch(0.7 0.4 15); /* Ultra-vibrant red */
@@ -947,15 +950,17 @@
 	--sidebar-foreground: oklch(0.12 0.05 240); /* Deep electric navy */
 	--sidebar-primary: oklch(0.65 0.35 10); /* Electric red primary */
 	--sidebar-primary-foreground: oklch(0.99 0.01 300); /* Bright white text */
-	--sidebar-accent: oklch(0.55 0.3 200); /* Electric blue accent */
-	--sidebar-accent-foreground: oklch(0.99 0.01 300); /* Bright white text */
+	--sidebar-accent: oklch(0.93 0.07 210); /* Match polished accent */
+	--sidebar-accent-foreground: oklch(0.12 0.05 240); /* Deep navy text */
 	--sidebar-border: oklch(0.85 0.05 280); /* Vibrant border */
 	--sidebar-ring: oklch(0.65 0.35 10); /* Electric red ring */
 }
 
 .theme-rudish-vibrant.dark {
 	/* Base Colors - Deep neon felt */
-	--background: oklch(0.08 0.08 240); /* Deep electric navy felt */
+	--background: oklch(
+		0.15 0.022 255
+	); /* Neutral-cool dark to reduce strain */
 	--foreground: oklch(0.98 0.02 60); /* Bright warm white */
 
 	/* Card Colors - Glowing cards on dark felt */
@@ -982,11 +987,9 @@
 		0.705 0.015 286.067
 	); /* Preserved dark muted foreground */
 
-	/* Accent Colors - Preserved dark mode values */
-	--accent: oklch(0.274 0.006 286.033); /* Preserved dark accent */
-	--accent-foreground: oklch(
-		0.985 0 0
-	); /* Preserved dark accent foreground */
+	/* Accent Colors - Polished deep red (dark) */
+	--accent: oklch(0.35 0.08 20);
+	--accent-foreground: oklch(0.98 0.02 60);
 
 	/* Destructive Colors - Blazing red */
 	--destructive: oklch(0.8 0.45 15); /* Maximum vibrant red */
@@ -1009,7 +1012,7 @@
 	--sidebar-foreground: oklch(0.98 0.02 60); /* Bright white text */
 	--sidebar-primary: oklch(0.75 0.4 10); /* Blazing red */
 	--sidebar-primary-foreground: oklch(0.98 0.02 60); /* Bright white text */
-	--sidebar-accent: oklch(0.55 0.35 200); /* Neon blue */
+	--sidebar-accent: oklch(0.35 0.07 210); /* Teal accent */
 	--sidebar-accent-foreground: oklch(0.98 0.02 60); /* Bright white text */
 	--sidebar-border: oklch(0.25 0.1 260); /* Electric border */
 	--sidebar-ring: oklch(0.75 0.4 10); /* Blazing red ring */
@@ -1017,7 +1020,7 @@
 
 .theme-poker-vibrant.dark {
 	/* Base Colors - Deep neon felt */
-	--background: oklch(0.08 0.08 240); /* Deep electric navy felt */
+	--background: oklch(0.15 0.025 255); /* Calmer neutral-cool dark */
 	--foreground: oklch(0.98 0.02 60); /* Bright warm white */
 
 	/* Card Colors - Glowing cards on dark felt */
@@ -1044,11 +1047,9 @@
 		0.705 0.015 286.067
 	); /* Preserved dark muted foreground */
 
-	/* Accent Colors - Preserved dark mode values */
-	--accent: oklch(0.274 0.006 286.033); /* Preserved dark accent */
-	--accent-foreground: oklch(
-		0.985 0 0
-	); /* Preserved dark accent foreground */
+	/* Accent Colors - Polished teal (dark) */
+	--accent: oklch(0.35 0.07 210);
+	--accent-foreground: oklch(0.98 0.02 60);
 
 	/* Destructive Colors - Blazing red */
 	--destructive: oklch(0.8 0.45 15); /* Maximum vibrant red */
@@ -1080,7 +1081,9 @@
 /* Midnight Ocean Theme - Light Only */
 .theme-midnight-ocean {
 	/* Base Colors - Calm ocean surface */
-	--background: oklch(0.95 0.01 190); /* Soft cyan white #e0fbfc */
+	--background: oklch(
+		0.98 0.006 200
+	); /* Softer, less cyan for long sessions */
 	--foreground: oklch(0.18 0.04 220); /* Deep midnight blue #293241 */
 
 	/* Card Colors - Gentle ocean waves */
@@ -1104,11 +1107,9 @@
 	--muted-foreground: oklch(
 		0.552 0.016 285.938
 	); /* Preserved light muted foreground */
-	/* Accent Colors - Preserved light mode values */
-	--accent: oklch(0.967 0.001 286.375); /* Preserved light accent */
-	--accent-foreground: oklch(
-		0.21 0.006 285 0.885
-	); /* Preserved light accent foreground */
+	/* Accent Colors - Polished oceanic */
+	--accent: oklch(0.92 0.06 210);
+	--accent-foreground: oklch(0.18 0.04 220);
 	/* Destructive Colors - Bright coral */
 	--destructive: oklch(0.68 0.18 25);
 	/* Bright coral for warnings */
@@ -1145,7 +1146,7 @@
 /* Midnight Ocean Theme - Dark Only */
 .theme-midnight-ocean.dark {
 	/* Base Colors - Deep ocean depths */
-	--background: oklch(0.18 0.04 220); /* Deep midnight blue #293241 */
+	--background: oklch(0.16 0.025 235); /* Slightly lighter, gentler dark */
 	--foreground: oklch(0.95 0.01 190); /* Soft cyan white #e0fbfc */
 
 	/* Card Colors - Elevated ocean surface */
@@ -1172,11 +1173,9 @@
 		0.705 0.015 286.067
 	); /* Preserved dark muted foreground */
 
-	/* Accent Colors - Preserved dark mode values */
-	--accent: oklch(0.274 0.006 286.033); /* Preserved dark accent */
-	--accent-foreground: oklch(
-		0.985 0 0
-	); /* Preserved dark accent foreground */
+	/* Accent Colors - Polished oceanic (dark) */
+	--accent: oklch(0.35 0.07 210);
+	--accent-foreground: oklch(0.95 0.01 190);
 
 	/* Destructive Colors - Intense coral */
 	--destructive: oklch(0.68 0.18 25); /* Bright coral for warnings */
@@ -1203,6 +1202,35 @@
 	--sidebar-accent-foreground: oklch(0.18 0.04 220); /* Deep midnight text */
 	--sidebar-border: oklch(0.42 0.08 200); /* Ocean wave border */
 	--sidebar-ring: oklch(0.65 0.15 25); /* Coral ring */
+}
+
+/* Unified card and sidebar surfaces across all themes for eye comfort */
+:root,
+.dark,
+.theme-red,
+.theme-red.dark,
+.theme-rose,
+.theme-rose.dark,
+.theme-orange,
+.theme-orange.dark,
+.theme-green,
+.theme-green.dark,
+.theme-blue,
+.theme-blue.dark,
+.theme-yellow,
+.theme-yellow.dark,
+.theme-violet,
+.theme-violet.dark,
+.theme-poker,
+.theme-poker.dark,
+.theme-poker-vibrant,
+.theme-poker-vibrant.dark,
+.theme-rudish-vibrant,
+.theme-rudish-vibrant.dark,
+.theme-midnight-ocean,
+.theme-midnight-ocean.dark {
+	--card: oklch(17.698% 0.02916 246.71);
+	--sidebar: oklch(17.698% 0.02916 246.71);
 }
 
 @theme {
