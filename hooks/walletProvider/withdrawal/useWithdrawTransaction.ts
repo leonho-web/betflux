@@ -249,7 +249,7 @@ export const useWithdrawTransaction = ({
 				const hash = await walletClient.writeContract({
 					address: data.contractAddress as `0x${string}`,
 					abi: pandaABI,
-					functionName: "Withdraw_Web",
+					functionName: "GmGame_WD",
 					args: [
 						data.tokenAddress,
 						finalWdAmountFun,
@@ -413,7 +413,7 @@ export const useWithdrawTransaction = ({
 							amount: withdrawAmount,
 							token_type: selectedToken.token_symbol,
 							token_address: selectedToken.token_address,
-							dst_wallet: user?.walletAddress as string,
+							dst_wallet: withdrawAddress,
 						},
 						authToken
 					);
