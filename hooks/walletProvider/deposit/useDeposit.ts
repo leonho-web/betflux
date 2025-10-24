@@ -32,53 +32,7 @@ const useDepositI18n = () => {
   };
 };
 
-/*
- * =============================================================================
- * HOOK API DOCUMENTATION (FINAL)
- * =============================================================================
- *
- * This is the main, public-facing hook for the entire Deposit feature. It follows
- * the "Divide and Conquer" principle by composing five specialized, single-
- * responsibility child hooks into a single, cohesive API for the UI.
- *
- * --- CHILD HOOKS ---
- *
- * 1. `useTokens`
- *    - RESPONSIBILITY: Provides the list of available tokens for the current network.
- *    - RETURNS: { tokens, nativeToken, usdt, usdx, isTokensLoading, fetchTokens }
- *
- * 2. `useSwapInfo`
- *    - RESPONSIBILITY: Fetches the destination wallet info required for swaps.
- *    - RETURNS: { dstSwapInfo, isLoading }
- *
- * 3. `useDepositFormState`
- *    - RESPONSIBILITY: Manages all user inputs and core form state (token, amount).
- *    - RETURNS: { selectedToken, depositAmount, depositType, isBalanceInsufficient,
- *                 formattedBalance, selectToken, handleAmountChange, setMaxAmount,
- *                 validateDeposit, resetFormState }
- *
- * 4. `useGasManager`
- *    - RESPONSIBILITY: Manages all logic related to gas fees and native tokens.
- *    - RETURNS: { gasReservationAmount, isLowBalance, isNativeCurrency,
- *                 tooltipMessage, showTooltip }
- *
- * 5. `useDepositCalculations`
- *    - RESPONSIBILITY: Manages async conversion rate calculations for UI feedback.
- *    - RETURNS: { minRequiredAmount, usdtConversionAmount, isFetchingConversion }
- *
- * 6. `useDepositTransaction`
- *    - RESPONSIBILITY: Manages the entire on-chain transaction lifecycle.
- *    - RETURNS: { isLoading, isApproving, isApproved, isPending,
- *                 transactionHash, timeLeft, executeTransaction, resetTransactionState }
- *
- * --- MAIN `useDeposit` HOOK ---
- *
- *    - RESPONSIBILITY: Composes all child hooks, provides final validation, and
- *      returns a unified API for the UI component, including computed helpers
- *      like `getButtonText` and `isDepositDisabled`.
- *
- * =============================================================================
- */
+
 
 import { useCallback, useEffect } from "react";
 import { toast } from "sonner";
