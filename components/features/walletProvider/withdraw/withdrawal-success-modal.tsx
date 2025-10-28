@@ -7,7 +7,6 @@ import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Copy, Download, RotateCw, Share2 } from "lucide-react";
 import { useQRCode } from "next-qrcode";
-// import NextImage from "next/image";
 import {
 	FacebookShareButton,
 	TwitterShareButton,
@@ -46,7 +45,7 @@ export const WithdrawalSuccessModal = (props: WithdrawalSuccessModalProps) => {
 		tokenSymbol,
 		shareUrl,
 	});
-	// eslint-disable-next-line
+	//eslint-disable-next-line
 	const [copiedReferral, setCopiedReferral] = useState(false);
 	const handleCopyReferral = async () => {
 		if (user?.referralId) {
@@ -183,39 +182,6 @@ export const WithdrawalSuccessModal = (props: WithdrawalSuccessModalProps) => {
 
 					{/* Main Content */}
 					<div className="relative w-full   flex flex-col justify-between p-6 sm:p-8">
-						{/* Top Section - User Info */}
-						{/* <div className="flex items-center gap-3 z-10">
-							<div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-gradient-to-br from-orange-400 to-amber-600 flex items-center justify-center overflow-hidden border-2 border-white/20">
-								<NextImage
-									src="/assets/banners/withdraw/share.png"
-									alt="Profile"
-									width={56}
-									height={56}
-									className="object-cover"
-								/>
-							</div>
-							<div>
-								<h3 className="text-base sm:text-lg font-bold tracking-wide">
-									{t("userName", {
-										defaultValue: "MemeWin Player",
-									})}
-								</h3>
-								<p className="text-xs sm:text-sm text-gray-400">
-									{new Date()
-										.toLocaleString("en-US", {
-											year: "numeric",
-											month: "2-digit",
-											day: "2-digit",
-											hour: "2-digit",
-											minute: "2-digit",
-											hour12: false,
-										})
-										.replace(",", "")}
-								</p>
-							</div>
-						</div> */}
-						{/* <div></div> */}
-
 						{/* Middle Section - Transaction Details */}
 						<div className="z-10 space-y-6 sm:space-y-4">
 							{/* Withdrawal Type */}
@@ -274,8 +240,8 @@ export const WithdrawalSuccessModal = (props: WithdrawalSuccessModalProps) => {
 								{/* Logo */}
 								<div className="flex items-center gap-2">
 									<img
-										src="/assets/site/meme-win-logo.png"
-										alt="MemeWin Logo"
+										src="/assets/site/betflux.png"
+										alt="BetFlux Logo"
 										width={200}
 										height={32}
 										className="object-contain"
@@ -386,7 +352,7 @@ export const WithdrawalSuccessModal = (props: WithdrawalSuccessModalProps) => {
 
 							<FacebookShareButton
 								url={shareUrl}
-								hashtag="#MemeWin"
+								hashtag="#BetFlux"
 								className="w-full"
 							>
 								<div className="group relative flex flex-col items-center justify-center gap-1 p-2 sm:p-2.5 bg-gradient-to-br from-gray-800/50 to-gray-900/50 hover:from-gray-700/50 hover:to-gray-800/50 rounded-xl transition-all duration-300 hover:scale-105 border border-white/10 hover:border-blue-500/40 min-h-[60px] sm:min-h-[65px] backdrop-blur-sm shadow-lg hover:shadow-blue-600/20">
