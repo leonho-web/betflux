@@ -40,13 +40,11 @@ export const useWithdrawCalculations = ({
 	useEffect(() => {
 		const amount = parseFloat(withdrawAmount);
 		if (isNaN(amount) || amount <= 0) {
-			setFee(null);
 			setTotalPayout(0);
 			return;
 		}
 		const calculatedFee = amount * 0.01; // 1% fee
 		const calculatedPayout = amount - calculatedFee;
-		setFee(calculatedFee);
 		setTotalPayout(calculatedPayout);
 	}, [withdrawAmount]);
 
