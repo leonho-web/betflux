@@ -123,7 +123,7 @@ const AppSidebarComponent = ({ ...props }: ComponentProps<typeof Sidebar>) => {
 			<div className="group-data-[collapsible=icon]:hidden flex items-center p-4">
 				<Link href="/" aria-label="Bet Flux Home" className="m-auto">
 					<Image
-						src="/assets/site/betFlux-logo.png"
+						src="/assets/site/betflux-logo.png"
 						alt="BetFlux Logo"
 						width={192}
 						height={48}
