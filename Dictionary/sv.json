@@ -33,7 +33,8 @@
 		"promotions": "Kampanjer",
 		"affiliate": "Affiliate",
 		"providers": "Leverantörer",
-		"lobby": "Lobby"
+		"lobby": "Lobby",
+		"bonus": "Omsättningsbonus"
 	},
 	"profile": {
 		"language": "Språk",

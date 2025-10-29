@@ -26,7 +26,8 @@
 		"promotions": "Promociones",
 		"affiliate": "Afiliados",
 		"providers": "Proveedores",
-		"lobby": "Vestíbulo"
+		"lobby": "Vestíbulo",
+		"bonus": "Bono por volumen de negocio"
 	},
 	"common": {
 		"loading": "Cargando...",
