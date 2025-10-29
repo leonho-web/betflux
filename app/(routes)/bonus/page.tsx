@@ -1,5 +1,6 @@
 "use client";
 import { Suspense, useState, useRef, useEffect } from "react";
+import { BonusDashboardTab } from "@/components/features/bonus/dashboard-tab/bonus-dahboard-tab";
 import { BonusClaimsTab } from "@/components/features/bonus/claims-tab/bonus-claims-tab";
 import { BonusFallback } from "@/components/features/bonus/bonus-fallback";
 import { useDynamicAuth } from "@/hooks/useDynamicAuth";
@@ -13,7 +14,6 @@ import { toast } from "sonner";
 import { useT } from "@/hooks/useI18n";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRefresh } from "@fortawesome/pro-light-svg-icons";
-import { BonusDashboardTab } from "@/components/features/bonus/dashboard-tab/bonus-dahboard-tab";
 
 export default function BonusPage() {
 	const t = useT();
@@ -156,7 +156,7 @@ export default function BonusPage() {
 
 	return (
 		<div className="min-h-screen bg-background">
-			<div className="py-4 sm:py-6 space-y-6 sm:space-y-8 px-4 sm:px-6 lg:px-8">
+			<div className="py-4 sm:py-6 space-y-6 sm:space-y-8">
 				{/* Header Section with Refresh Button */}
 				<div className="flex items-center justify-between flex-wrap gap-4">
 					<div className="space-y-2 sm:space-y-4">
